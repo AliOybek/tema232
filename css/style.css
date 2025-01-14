@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+:root{
+    --a: 'arial';
+    --i: 'impact';
+}
+
+body{
+    font-family: var(--a);
+}
+
+.title{
+    color: #eb7e28;
+    border-bottom: 2px solid #eb7e28;
+    font-size: 36px;
+    display: inline;
+}
+
+/* HEADER START */
+/* **************************************************************** */
+
+header .poster{
+    background: linear-gradient(to right, #4a0f97 , #b16616);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 0px;
+    color: #fff;
+}
+
+header .poster i{
+    font-size: 51px;
+}
+
+header .poster p{
+    width: 161px;
+    margin-left: 24px;
+    font-size: 18px;
+}
+
+header .menu{
+    background: #000;
+}
+
+header .menu nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu nav ul{
+    display: flex;
+}
+
+header .menu nav ul a{
+    padding: 40px 13px;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    transition: 0.5s;
+    border-bottom: 3px solid transparent;
+}
+
+header .menu nav ul a:hover{
+    color: #e27c28;
+    border-bottom: 3px solid #e27c28;
+}
+
+header .text{
+    background: url(../img/header-fon.jpg) no-repeat center/cover;
+    padding-top: 180px;
+    padding-bottom: 170px;
+}
+
+header .text h1{
+    font-size: 60px;
+    color: #fff;
+    font-family: var(--i);
+}
+
+header .text p{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 36px;
+    max-width: 580px;
+    width: 100%;
+}
+
+header .text .btn a{
+    width: 164px;
+    height: 41px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .text .btn a:hover{
+    background: #fff;
+    color: #000;
+}
+
+header .text .btn{
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 84px;
+}
+
+/* FILMS START */
+/* ********************************************************************* */
+
+.films{
+    background: #02153a;
+    padding-top: 65px;
+    padding-bottom: 70px;
+}
+
+.films .film-block .box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+}
+
+.films .film-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 30px;
+    margin-top: 58px;
+}
+
+.films .film-block .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.films .film-block .box:hover img{
+    transform: scale(1.3);
+}
+
+.films .film-block .box .box-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    padding: 20px;
+    background: #00000050;
+}
+
+.films .film-block .box .box-text i{
+    font-size: 40px;
+}
+
+.films .film-block .box .box-text h2{
+    font-size: 24px;
+    margin-top: 23px;
+    margin-bottom: 18px;
+}
+
+
+/* FON-IMG START */
+/* ******************************************************************* */
+
+.fon-img{
+    background: url(../img/fon-section.jpg) no-repeat center/cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+
+.fon-img img{
+    max-width: 456px;
+    width: 100%;
+}
+
+.fon-img p{
+    max-width: 535px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.fon-img a{
+    width: 164px;
+    height: 43px;
+    background: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #000;
+    margin-top: 50px;
+    transition: 0.6s;
+}
+
+.fon-img a:hover{
+    box-shadow: 0 0 15px 5px #fff;
+    background: #000;
+    color: #fff;
+}
+
+/* COLLECTIONS START */
+/* ******************************************************************** */
+
+
+.collections{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #02153a;
+}
+
+.collections .block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 47px;
+}
+
+.collections .block .box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.collections .block .box .box-images{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 100%;
+    transform: scale(0.97);
+    z-index: 2;
+}
+
+.collections .block .box .box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.52s;
+}
+
+.collections .block .box .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(to right, #5808c29a, #ce74139a);
+}
+
+.collections .block .box .text i{
+    font-size: 45px;
+}
+
+.collections .block .box .text p{
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.collections .block .box:hover .box-img{
+    transform: scale(1.5);
+}
+
+/* SERIES START */
+/* *********************************************************************** */
+
+.series{
+    padding-bottom: 48px;
+    background: #02153a;
+}
+
+.series .block{
+    margin-top: 48px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.series .block .box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.series .block .box .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(to right, #5808c29a, #ce74139a);
+}
+
+.series .block .box .box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.series .block .box .text a{
+    width: 164px;
+    height: 41px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.series .block .box .text a:hover{
+    color: #000000;
+    background: #fff;
+}
+
+.series .block .box .text h3{
+    font-size: 40px;
+    margin-bottom: 41px;
+}
+
+.series .block .box .text p{
+    max-width: 1090px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    
+}
+
+.series .series_block .box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.series .series_block .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.series .series_block .box a{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #4c11958c, #af64198e );
+    color: white;
+    font-size: 24px;
+}
+
+.series .series_block .box i{
+    font-size: 41px;
+    margin-bottom: 24px;
+}
+
+.series .series_block .box:hover img{
+    transform: scale(1.5);
+}
+
+.series .series_block{
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "box-1 box-1 box-2 box-3"
+    "box-1 box-1 box-4 box-5"
+    ;
+}
+
+.series .series_block .box-1{
+    grid-area: box-1;
+}
+.series .series_block .box-2{
+    grid-area: box-2;
+}
+.series .series_block .box-3{
+    grid-area: box-3;
+}
+.series .series_block .box-4{
+    grid-area: box-4;
+}
+.series .series_block .box-5{
+    grid-area: box-5;
+}
+
+
+/* *********************** */
+/* SERIES END */
+
+
+/* FOOTER START */
+/* *********************** */
+
+footer .box{
+    width: 100%;
+    height: 92px;
+    background: linear-gradient(to right, #f28429, #934c03);
+}
+
+
